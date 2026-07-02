@@ -22,8 +22,8 @@ The modifier key is `Mod4` (Windows/Super key).
 | `Win + c` | Center camera on focused window (Panning mode only) |
 | `Win + 1` / `2` / `3` | Switch workspace (Tag) |
 | `Win + Shift + 1` / `2` / `3` | Move focused window to another Tag |
-| `Win + q` | Launch terminal (`alacritty`) |
-| `Win + d` | Launch application launcher (`dmenu`) |
+| `Win + q` | Launch terminal (`st`) |
+| `Win + d` | Launch application launcher (`rofi`) |
 | `Win + w` | Close focused window |
 | `Win + Shift + e` | Quit xcwm |
 | `Volume Up / Down / Mute` | Adjust system volume |
