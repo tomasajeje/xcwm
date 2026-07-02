@@ -47,7 +47,7 @@ override-redirect = true
 ```
 ## Installation
 ```bash
-git clone https://codeberg.org/tomasajeje/xcwm.git
+git clone https://github.com/tomasajeje/xcwm.git
 cd xcwm
 make
 sudo/doas make install
