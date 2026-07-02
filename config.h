@@ -14,9 +14,6 @@ static const char *voldown[]    = { "wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@
 static const char *volmute[]    = { "wpctl", "set-mute",   "@DEFAULT_AUDIO_SINK@", "toggle", NULL };
 static const char *brightup[]   = { "brightnessctl", "set", "5%+", NULL };
 static const char *brightdown[] = { "brightnessctl", "set", "5%-", NULL };
-static const char *zoomin[]  = { "vcompmgr", "-Z", "1.5", NULL };
-static const char *zoomout[] = { "vcompmgr", "-Z", "0.7", NULL };
-static const char *zoomnormal[] = { "vcompmgr", "-Z", "1.0", NULL };
 static const char *wallpicker[] = { "/home/tomasa/.local/bin/wallpaper-picker", NULL };
 
 typedef struct {
@@ -39,9 +36,6 @@ static Key keys[] = {
     { MOD,            XK_k,      cycle_client,      {.i = -1}       },
     { MOD|ShiftMask,  XK_j,      move_client,       {.i =  1}       },
     { MOD|ShiftMask,  XK_k,      move_client,       {.i = -1}       },
-    { MOD|ControlMask, XK_Up,   spawn, {.v = zoomin}  },
-    { MOD|ControlMask, XK_Down, spawn, {.v = zoomout} },
-    { MOD|ControlMask, XK_equal, spawn, {.v = zoomnormal} },
     { MOD, XK_p, spawn, {.v = wallpicker} },
 
     /* Panning: mover ventana+camara con flechas (0=R 1=L 2=D 3=U) */
